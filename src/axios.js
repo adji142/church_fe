@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:8000/api';
+// axios.defaults.baseURL = 'http://localhost:8000/api';
+axios.defaults.baseURL = 'https://churchbe.aissystem.org/api';
 
 // Request interceptor to add token and branch ID
 axios.interceptors.request.use(config => {
